@@ -1,0 +1,25 @@
+.template{
+    background-color: azure;
+    min-height: 100vh;
+}
+.templati__title{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    color: rgb(98, 145, 255);
+}
+h3{
+    color:  gray;
+}
+p{
+    padding: 30px;
+    color: rgb(98, 145, 255);
+}
+.dark {
+    background-color: rgb(140, 174, 247);
+}
+.dark h1, h3, p{
+    color: white;
+}

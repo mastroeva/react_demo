@@ -6,7 +6,7 @@ import  "./CardList.css";
 const data = [
     {
     id: Math.random(),
-    image: "http://www.kartinkioboi.ru/_ph/19/903586119.jpg?1650314729",
+    image: "https://cutewallpaper.org/21/apple-ipad-backgrounds/PAPERS.co-iPad-wallpaper-bj42-apple-iphone-ios13-.jpg",
     text: "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
     date: "2021-12-12",
     lesson__num: 0,
@@ -16,7 +16,7 @@ const data = [
 
     {
     id: Math.random(),
-    image: "http://www.kartinkioboi.ru/_ph/19/903586119.jpg?1650314729",
+    image: "https://cutewallpaper.org/21/apple-ipad-backgrounds/PAPERS.co-iPad-wallpaper-bj42-apple-iphone-ios13-.jpg",
     text: "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
     date: "2021-12-12",
     lesson__num: 0,
@@ -26,7 +26,7 @@ const data = [
 
     {
     id: Math.random(),
-    image: "http://www.kartinkioboi.ru/_ph/19/903586119.jpg?1650314729",
+    image: "https://cutewallpaper.org/21/apple-ipad-backgrounds/PAPERS.co-iPad-wallpaper-bj42-apple-iphone-ios13-.jpg",
     text: "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
     date: "2021-12-12",
     lesson__num: 0,
@@ -35,7 +35,7 @@ const data = [
     },
     {
     id: Math.random(),
-    image: "http://www.kartinkioboi.ru/_ph/19/903586119.jpg?1650314729",
+    image: "https://cutewallpaper.org/21/apple-ipad-backgrounds/PAPERS.co-iPad-wallpaper-bj42-apple-iphone-ios13-.jpg",
     text: "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
     date: "2021-12-12",
     lesson__num: 0,
@@ -44,7 +44,7 @@ const data = [
     },
     {
     id: Math.random(),
-    image: "http://www.kartinkioboi.ru/_ph/19/903586119.jpg?1650314729",
+    image: "https://cutewallpaper.org/21/apple-ipad-backgrounds/PAPERS.co-iPad-wallpaper-bj42-apple-iphone-ios13-.jpg",
     text: "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
     date: "2021-12-12",
     lesson__num: 0,

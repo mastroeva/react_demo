@@ -1,0 +1,27 @@
+.card__page{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 50px;
+}
+
+.card {
+    width: 600px;
+    height: 550px;
+    background-color: azure;
+    border: 1px solid rgb(161, 161, 161);
+    margin-left: 20px;
+}
+
+.card__img img {
+    width: 500px;
+    height: 270px;
+}
+
+h1, p{
+    color: rgb(0, 81, 255);
+}
+
+p{
+    font-size: 20px;
+}
