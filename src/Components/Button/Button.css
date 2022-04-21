@@ -1,0 +1,8 @@
+button{
+    background-color: rgb(98, 145, 255);
+    border: 2px solid rgb(98, 145, 255);
+    color: aliceblue;
+    border-radius: 20px;
+    width: 200px;
+    height: 30px;
+}

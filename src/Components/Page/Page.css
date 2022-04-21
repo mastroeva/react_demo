@@ -1,0 +1,26 @@
+.page{
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    overflow: auto;   
+    flex-direction: column;
+    gap: 40px;
+}
+
+
+.page__title{
+    display: flex;
+
+}
+
+.page__login{
+    border-right: 1px solid rgb(115, 115, 115);
+    padding-right: 10px;
+    color: rgb(98, 145, 255);
+}
+
+.page__registration{
+    border-left: 1px solid rgb(115, 115, 115);
+    padding-left: 10px;
+    color: grey;
+}

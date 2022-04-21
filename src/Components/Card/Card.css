@@ -1,0 +1,35 @@
+.card{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 300px;
+    height: 350px;
+    border: 1px solid black;
+    border-radius: 20px;
+    text-align: left;
+}
+
+.card__img {
+    align-self: center;
+}
+
+.card__img img {
+    width: 270px;
+    height: 170px;
+    border-radius: 20px;
+}
+.card__title{
+    font-size: 20px;
+    color: gray;
+}
+
+.card__text{
+    font-size: 16px;
+    color: rgb(181, 181, 181);
+}
+
+.card__date {
+    font-size: 14px;
+    color: rgb(79, 199, 255);
+}
