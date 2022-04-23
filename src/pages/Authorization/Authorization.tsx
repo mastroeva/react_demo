@@ -1,10 +1,10 @@
 import React from 'react';
 import Button from '../../Components/Button';
 import Input from '../../Components/Input';
-import './Login.css'
+import './Authorization.css'
 
 
-const Login = () => {
+const Authorization = () => {
     return (
         <div className='login'>
             <div className='login__title'>
@@ -25,4 +25,4 @@ const Login = () => {
     )
 }
 
-export default Login
+export default Authorization
