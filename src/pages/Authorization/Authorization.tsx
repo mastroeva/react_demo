@@ -1,27 +1,37 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Button from '../../Components/Button';
 import Input from '../../Components/Input';
 import './Authorization.css'
-
+import HeaderForm from './HeaderForm';
+import RegConfirm from '../RegConfirm';
+import LoginForm from './LoginForm';
+import RegistrationForm from './RegistrationForm';
 
 const Authorization = () => {
+    const [tabName, setTabName] = useState('login')
+    const [isConfirm, setConfirm] = useState(false)
+
+    const onHeaderClick = (name: string) => {
+        setTabName(name)
+    }
+
+    const onFooterClick = (name: string) => {
+        setTabName(name)
+    }
+
+    const onRegClick = () => {
+        setConfirm(true)
+    }
+    
     return (
-        <div className='login'>
-            <div className='login__title'>
-                <h2 className='login__login'>Login</h2>
-                <h2 className='login__registration'>Registration</h2>
-            </div>
-            <form>
-                <label htmlFor="email"> Email</label>
-                <Input id='email'></Input>
-                <label htmlFor="password"> Password</label>
-                <Input id='Password'></Input>
-            </form>
-            <Button text = {'Login'}></Button>
-            <p>
-                Forgot your password? <span>Reset password</span>
-            </p>
+        isConfirm ? (
+            <RegConfirm></RegConfirm>
+        ) : 
+        <div className='authorizationWrapper'>
+            <HeaderForm onHeaderClick={onHeaderClick} tabName={tabName}></HeaderForm>  
+            {tabName === 'login' ? <LoginForm></LoginForm> : <RegistrationForm onFooterClick={onFooterClick} onRegClick={onRegClick}></RegistrationForm>}
         </div>
+        
     )
 }
 

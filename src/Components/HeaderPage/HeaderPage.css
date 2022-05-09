@@ -1,0 +1,76 @@
+.header{
+    background-color: antiquewhite;
+    height: 8  0px;
+}
+.header._dark{
+    background-color: rgb(105, 105, 206);
+}
+.header_container{
+    max-width: 1280px;
+    padding: 0 40px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.menu_icon{
+    z-index: 5;
+    position: relative;
+    width: 30px;
+    height: 18px;
+    cursor: pointer ;
+}
+.menu_icon span,
+.menu_icon::before,
+.menu_icon::after{
+     left: 0;
+     position: absolute;
+     height: 10%;
+     width: 100%;
+     transition: all 0.3s ease 0;
+     background-color: white;
+}
+.menu_icon::before,
+.menu_icon::after{
+    content: '';
+}
+.menu_icon::before{
+    top: 0;
+}
+
+.menu_icon::after{ 
+    bottom: 0;
+}
+.menu_icon span{
+    top: 50%;
+    transform: scale(1) translate(0px, -50%);
+} 
+.checkbox {
+    visibility: hidden;
+}
+
+.checkbox__group {
+    position: relative;
+    width: 70px;
+    height: 30px;
+    border-radius: 50px;
+    border: 1px solid blue;
+}
+
+.checkbox__label {
+    display: block;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background-color: blue;
+    position: absolute;
+    z-index: 1;
+    top: 3px;
+    left: 3px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.checkbox:checked + .checkbox__label {
+    left: 44px;
+}

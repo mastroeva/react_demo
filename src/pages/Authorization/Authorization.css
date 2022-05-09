@@ -1,39 +1,33 @@
-.login{
+.authorizationForm{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    max-width: 270px;
+}
+.authorizationWrapper{
     display: flex;
     align-items: center;
-    justify-content: center; 
-    overflow: auto;   
     flex-direction: column;
     gap: 40px;
-    padding-top: 70px;
+    padding-top: 100px;
+    max-width: 400px;
+    margin: 0 auto;
 }
-
-.login__title{
-    display: flex;
-
-}
-
-.login__login{
-    border-right: 1px solid rgb(115, 115, 115);
-    padding-right: 10px;
-    color: rgb(0, 81, 255);
-}
-
-.login__registration{
-    border-left: 1px solid rgb(115, 115, 115);
+.authorizationForm__input{
+    margin-top: 10px;
     padding-left: 10px;
-    color: grey;
+    padding-right: 10px;
+}
+.authorizationForm__text{
+    color: red;
+    min-height: 20px;
+}
+.authorizationForm__fotter{
+    color: gray;
+    text-align: center;
+}
+.authorizationForm__fotter span{
+    color: blue;
+    cursor: pointer;
 }
 
-form{
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-p {
-    color: grey;
-}
-
-span{
-    color: rgb(0, 81, 255);
-}
