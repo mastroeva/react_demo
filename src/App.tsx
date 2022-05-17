@@ -8,6 +8,8 @@ import Template from './pages/Template';
 import { ThemeModeProvider } from "./context/ThemModeProvider";
 import { Theme } from "./context/themeModeContext";
 import HeaderPage from './Components/HeaderPage';
+import { Provider } from 'react-redux';
+import { store } from "./redux/store";
 
 const App = () => {
   const [theme, setTheme] = useState(Theme.Light)
@@ -18,13 +20,15 @@ const App = () => {
   };
 
   return (
-    <ThemeModeProvider theme={theme} onChangeTheme={onChangeTheme}>
-      <div className={isLightTheme ? "App" : "App _dark"}>
-        <HeaderPage/>
-        <Authorization/>
-      </div>
-    </ThemeModeProvider>
-  )
+    <Provider store={store}>
+      <ThemeModeProvider theme={theme} onChangeTheme={onChangeTheme}>
+        <div className={isLightTheme ? "App" : "App _dark"}>
+          <HeaderPage/>
+          <Authorization/>
+        </div>
+      </ThemeModeProvider>
+    </Provider>
+  );
 }
 
 

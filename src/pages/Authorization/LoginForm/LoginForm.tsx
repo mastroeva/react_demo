@@ -3,8 +3,10 @@ import classNames from 'classnames';
 import Button from '../../../Components/Button';
 import Input from '../../../Components/Input';
 import { Theme, useThemeContext } from '../../../context/themeModeContext';
+import { useDispatch } from 'react-redux';
 
 const LoginForm = () => {
+    
     const { theme, onChangeTheme } = useThemeContext()
     const isLightTheme = theme === Theme.Light
     const onClickTheme = () =>{
@@ -27,6 +29,8 @@ const LoginForm = () => {
             setEmailError('')
         }
     }
+    
+    const dispatch = useDispatch()
 
     const passwordHandler = (e: any) => {
         setPassword(e.target.value)
@@ -51,6 +55,13 @@ const LoginForm = () => {
                 break
         }
     }
+
+    const onClick = (isPlus: boolean) => {
+        const PLUS_ACTION = { type: "counter/incremented" };
+        const MINUS_ACTION = { type: "counter/decremented" };
+        dispatch(isPlus ? PLUS_ACTION : MINUS_ACTION);
+    };
+
 
     return(
         <div className={classNames("container", { ["_dark"]: !isLightTheme })}>
@@ -78,7 +89,8 @@ const LoginForm = () => {
                     Forgot your password? <span>Reset password</span>
                 </p>
             </form>
-
+            <Button className="btm"  text={"ПЛЮС"} onClick = {() => onClick(false)}/>
+            <Button className="btm" text={"МИНУС"}  onClick = {() => onClick(true)} />
         </div>
     )
 }
