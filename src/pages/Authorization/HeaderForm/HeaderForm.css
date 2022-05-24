@@ -1,0 +1,16 @@
+.header__form{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.title{
+    color: gray;
+    cursor: pointer;
+}
+.header__form span{
+    font-weight: bold;
+    font-size: 25px;
+}
+._title-active{
+    color: blue;
+}

@@ -1,19 +1,36 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './App.css';
-import Input from './Components/Input';
 import Card from './Components/Card';
 import CardList from './Components/CardList';
-import Login from './pages/Login';
-import Registration from './pages/Regastration';
-import RegConfirm from './pages/RegConfirm';
+import Authorization from './pages/Authorization';
 import CardPage from './pages/CardPage';
-import Template from './pages/Template'
+import Template from './pages/Template';
+import { ThemeModeProvider } from "./context/ThemModeProvider";
+import { Theme } from "./context/themeModeContext";
+import HeaderPage from './Components/HeaderPage';
+import { Provider } from 'react-redux';
+import { store } from "./redux/store";
 
+const App = () => {
+  const [theme, setTheme] = useState(Theme.Light)
+  const isLightTheme = theme === Theme.Light
 
-function App() {
+  const onChangeTheme = (value: Theme) => {
+    setTheme(value)
+  };
+
   return (
-    <Template></Template>
-  )
+    <Provider store={store}>
+      <ThemeModeProvider theme={theme} onChangeTheme={onChangeTheme}>
+        <div className={isLightTheme ? "App" : "App _dark"}>
+          <HeaderPage/>
+          <Authorization/>
+        </div>
+      </ThemeModeProvider>
+    </Provider>
+  );
 }
+
+
 
 export default App;

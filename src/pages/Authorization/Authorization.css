@@ -1,0 +1,33 @@
+.authorizationForm{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    max-width: 270px;
+}
+.authorizationWrapper{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+    padding-top: 100px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+.authorizationForm__input{
+    margin-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.authorizationForm__text{
+    color: red;
+    min-height: 20px;
+}
+.authorizationForm__fotter{
+    color: gray;
+    text-align: center;
+}
+.authorizationForm__fotter span{
+    color: blue;
+    cursor: pointer;
+}
+
